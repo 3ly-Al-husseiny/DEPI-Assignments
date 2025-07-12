@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Header>
+        <h1>Welcom to Semantic HTML Showcase</h1>
+        <p><mark>This page is designed using semantic HTML 5 Tags.</mark></p>
+
+        <nav>
+            <ul  style="display: flex; justify-content: space-between;">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Coming Soon</a></li>
+            </ul>
+        </nav>
+    </Header>
+
+    <main>
+        <article>
+            <h2>Hyperlinks</h2>
+            <p>Visit <a href="https://www.w3schools.com/html/" target="_blank">W3School to learn HTML</a></p>
+            <p><a href="#list">Go to List Section</a></p>
+        </article>
+
+        <article>
+            <h2>Accessible Image</h2>
+            <img src="download.png" alt="A basic Dom Structure image">
+            <p>A basic Com Structure image</p>
+        </article>
+
+        <article id="list">
+            <h2>Useful HTML Lists</h2>
+            <h3>Unordered List:</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <h3>Ordered List[Type"A"]:</h3>
+            <ol type="A">
+                <li>Semmantic Tags</li>
+                <li>Forms</li>
+                <li>Tables</li>
+            </ol>
+            <h3>Description List:</h3>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+            </dl>
+        </article>
+        <article>
+            <h2>Table Example</h2>
+            <table border="1">
+                <thead>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Semantic Tag</td>
+                        <td>Greate managin to content</td>
+                    </tr>
+                     <tr>
+                        <td>Non-Semantic Tag</td>
+                        <td>Only Used for Layout(div , klsfj)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">More tags to be added soon</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        <article>
+            <h2>Quick Tip</h2>
+            <p>Always Use the attribue in &lt;img&gt; for accessbility and SEO</p>
+        </article>
+        <footer>
+            <h2>Contact Us</h2>
+            <form action="" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="Name">
+                <br> <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email">
+                <br> <br>
+                <label for="message">Message</label>
+                <textarea name="Message" id="message" cols="30" rows="10" ></textarea>
+                <br> <br>
+                <input type="submit">
+            </form>
+
+            <nav>
+                <p>&copy;2025 Semantic Web Tutorial</p>
+                <p>Validate Your Code at <a href="https://validator.w3.org/">W3c</a></p>
+            </nav>
+        </footer>
+    </main>
+</body>
+</html>
