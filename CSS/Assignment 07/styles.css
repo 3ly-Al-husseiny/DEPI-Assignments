@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.Resume {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.Header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Header h2 {
+    position: relative;
+}
+
+.underline {
+    width: 50px;
+    height: 3px;
+    background: #00cc99;
+    margin: 10px auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card {
+    flex:calc(50% - 20px);
+    background: #fff;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.card.My-Education {
+    min-width: 200px;
+}
+
+.card-Title h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Card-Content {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;;
+    width: 100%;
+    height: 100%;
+    color: #666;
+    border: 1px solid #eee;
+}
+
+.date {
+    display: block;
+    color: white;
+    background-color: #00cc99;
+    margin-bottom: 5px;
+    width: 26%;
+    border: 1px solid #00cc99;
+    border-radius: 5px;
+}
+
+.Card-Subtitle {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.location {
+    display: block;
+    color: #ff3333;
+    margin-bottom: 5px;
+}
+
+.MySkills {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.header h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.skills-bars {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-bar {
+    flex:calc(50% - 20px);
+    min-width: 250px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.skillNameRate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-progress-bar {
+    height: 15px;
+    background: #f0f0f0;
+    border-radius: 8px;
+}
+
+.progress {
+    height: 100%;
+    background: #00cc99;
+    border-radius: 8px;
+}
+
+.CV-Download {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.CV-Download button {
+    padding: 10px 20px;
+    background: #00cc99;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.CV-Download button:hover {
+    background: #00b389;
+}
