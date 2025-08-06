@@ -1,0 +1,844 @@
+/* Custom CSS for DevFolio Portfolio */
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Styles */
+.navbar {
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background: url('media/images/FirstSection/background.jpg') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.2rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* About Section Styles */
+.about-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.ImageAndInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-card {
+    background: white;
+    padding: 40px;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image-container {
+    flex-shrink: 0;
+    margin-bottom: 0;
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.profile-info {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+.info-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    align-items: center;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #333;
+    min-width: 60px;
+    margin-right: 10px;
+}
+
+.info-value {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+.skills-section {
+    margin-top: 40px;
+}
+
+.skills-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.skill-item {
+    margin-bottom: 25px;
+}
+
+.skill-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.skill-bar {
+    height: 6px;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-progress {
+    height: 100%;
+    background: #007bff;
+    border-radius: 3px;
+    width: 0%;
+    transition: width 2s ease-in-out;
+}
+
+/* Skill bar widths - Pure CSS approach */
+.skill-85 {
+    width: 85% !important;
+}
+
+.skill-75 {
+    width: 75% !important;
+}
+
+.skill-90 {
+    width: 90% !important;
+}
+
+.skill-50 {
+    width: 50% !important;
+}
+
+.about-content {
+    padding: 0 20px;
+}
+
+.about-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-underline {
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin-bottom: 25px;
+}
+
+.about-text {
+    color: #6c757d;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    margin-left: 10px;
+}
+
+.about-text p {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 30px 15px 0;
+    }
+    
+    .about-title {
+        font-size: 2rem;
+    }
+    
+    .profile-card {
+        margin-bottom: 30px;
+    }
+    
+    .ImageAndInfo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .profile-image-container {
+        align-self: center;
+    }
+    
+    .profile-info {
+        width: 100%;
+    }
+}
+
+/* Card Styling for All Sections */
+.card-style {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-style:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Services Section Styles */
+.services-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.section-subtitle {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.section-underline {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin-bottom: 50px;
+}
+
+.service-card {
+    padding: 40px 30px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    background-color: white;
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: #333;
+}
+
+.service-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.service-description {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Services */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .service-card {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Statistics Section Styles */
+.statistics-section {
+    position: relative;
+    background: url('media/images/Fourthfolder/background.jpg') center center/cover no-repeat;
+    padding: 80px 0;
+    color: white;
+    min-height: 400px;
+}
+
+.stats-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 130, 216, 0.9);
+    z-index: 1;
+}
+
+.statistics-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.stat-card {
+    padding: 30px 20px;
+}
+
+.stat-icon {
+    width: 80px;
+    height: 80px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    background-color: transparent;
+}
+
+.stat-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Responsive Statistics */
+@media (max-width: 768px) {
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .stat-card {
+        margin-bottom: 30px;
+    }
+}
+
+/* Additional utility classes */
+.z-1 {
+    z-index: 1;
+}
+
+.z-2 {
+    z-index: 2;
+}
+
+/* Portfolio Section Styles */
+.portfolio-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.portfolio-card {
+    overflow: hidden;
+    padding: 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 25px 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio-info-content {
+    flex: 1;
+}
+
+.portfolio-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-icon {
+    color: #007bff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.portfolio-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.portfolio-category {
+    color: #007bff;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive Portfolio */
+@media (max-width: 768px) {
+    .portfolio-card {
+        margin-bottom: 20px;
+    }
+    
+    .portfolio-info {
+        padding: 20px;
+    }
+    
+    .portfolio-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Testimonials Section Styles */
+.testimonials-section {
+    position: relative;
+    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+    padding: 100px 0;
+    color: white;
+    min-height: 500px;
+}
+
+.testimonials-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(74, 144, 226, 0.1);
+    z-index: 1;
+}
+
+.testimonials-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.testimonial-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-content {
+    text-align: center;
+}
+
+.testimonial-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: white;
+    opacity: 0.95;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+.dot:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Testimonials */
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 80px 0;
+    }
+    
+    .testimonial-name {
+        font-size: 1.5rem;
+    }
+    
+    .testimonial-text {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    .testimonial-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Contact Section Styles */
+.contact-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.contact-wrapper {
+    background: white;
+    padding: 60px;
+    border-radius: 15px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+}
+
+.contact-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-underline {
+    width: 50px;
+    height: 3px;
+    background-color: #007bff;
+    margin-bottom: 40px;
+}
+
+.contact-form-container {
+    padding-right: 30px;
+}
+
+.contact-input,
+.contact-textarea {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.1);
+    background-color: white;
+}
+
+.contact-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-btn {
+    background: #007bff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.contact-info-container {
+    padding-left: 30px;
+}
+
+.contact-description {
+    color: #6c757d;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-size: 0.95rem;
+}
+
+.contact-details {
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-icon {
+    color: #007bff;
+    font-size: 1.1rem;
+    margin-right: 15px;
+    width: 20px;
+}
+
+.contact-text {
+    color: #333;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    width: 45px;
+    height: 45px;
+    background: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    color: white;
+}
+
+/* Footer Styles */
+.footer-section {
+    background: linear-gradient(135deg, #4A90E2 0%, #357ABD 100%);
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    opacity: 0.9;
+}
+
+.footer-credit {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.footer-text strong,
+.footer-credit strong {
+    font-weight: 600;
+}
+
+/* Responsive Contact */
+@media (max-width: 992px) {
+    .contact-form-container {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    
+    .contact-info-container {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        padding: 40px 30px;
+    }
+    
+    .contact-title {
+        font-size: 1.6rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}

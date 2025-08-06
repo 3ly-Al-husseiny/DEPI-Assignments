@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFolio - Morgan Freeman</title>
+    <!-- Bootstrap CSS -->
+    <link href="Lib/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">DevFolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work">WORK</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">DROP DOWN</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center justify-content-center">
+        <div class="hero-overlay"></div>
+        <div class="container text-center position-relative">
+            <div class="hero-content">
+                <h1 class="hero-title mb-3">I am Ali El-husseiny</h1>
+                <p class="hero-subtitle">Freelance Asp.Net & Angular Full-Stack Developer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <div class="card-style">
+                <div class="row">
+                    <!-- Profile Card -->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="ImageAndInfo">
+                            <div class="profile-image-container">
+                                <img src="media/images/SecondSection/circulImage.jpeg" alt="Ali El-husseiny" class="profile-image">
+                            </div>
+                            
+                            <div class="profile-info">
+                                <div class="info-item">
+                                    <span class="info-label">Name:</span>
+                                    <span class="info-value">Ali El-husseiny</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Profile:</span>
+                                    <span class="info-value">full stack developer</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Email:</span>
+                                    <span class="info-value">ali.engineer@gmail.com</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-label">Phone:</span>
+                                    <span class="info-value">+20 1023211727</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills-section">
+                                <h4 class="skills-title">Skill</h4>
+                                
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>HTML</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress skill-85"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>CSS3</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress skill-75"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>ASP.NET</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress skill-90"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-header">
+                                        <span>ANGULAR</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress skill-85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    <!-- About Me Content -->
+                    <div class="col-lg-8 col-md-12">
+                        <div class="about-content">
+                            <h2 class="about-title">About me</h2>
+                            <div class="about-underline"></div>
+                            
+                            <div class="about-text">
+                                <p>I'm a passionate full-stack developer with a strong background in building dynamic web applications. My expertise lies in ASP.NET and Angular, and I'm dedicated to delivering high-quality software solutions that meet client needs.</p>
+                                <p>With a keen eye for detail and a commitment to excellence, I strive to create user-friendly interfaces and robust back-end systems. My goal is to leverage technology to solve real-world problems and enhance user experiences.</p>
+                                <p>Whether working independently or as part of a team, I bring a collaborative spirit
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">SERVICES</h2>
+                    <p class="section-subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="section-underline mx-auto"></div>
+                </div>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="row">
+                <!-- Web Design -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card card-style text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4 class="service-title">WEB DESIGN</h4>
+                        <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipiscing elit. Illum voluptates error vel cumque eveniet dolores provident maiores explicabo ad atque!</p>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card card-style text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h4 class="service-title">WEB DEVELOPMENT</h4>
+                        <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipiscing elit. Illum voluptates error vel cumque eveniet dolores provident maiores explicabo ad atque!</p>
+                    </div>
+                </div>
+
+                <!-- Photography -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card card-style text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4 class="service-title">PHOTOGRAPHY</h4>
+                        <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipiscing elit. Illum voluptates error vel cumque eveniet dolores provident maiores explicabo ad atque!</p>
+                    </div>
+                </div>
+
+                <!-- Responsive Design -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card card-style text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-binoculars"></i>
+                        </div>
+                        <h4 class="service-title">RESPONSIVE DESIGN</h4>
+                        <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipiscing elit. Illum voluptates error vel cumque eveniet dolores provident maiores explicabo ad atque!</p>
+                    </div>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card card-style text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h4 class="service-title">GRAPHIC DESIGN</h4>
+                        <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipiscing elit. Illum voluptates error vel cumque eveniet dolores provident maiores explicabo ad atque!</p>
+                    </div>
+                </div>
+
+                <!-- Marketing Services -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card card-style text-center">
+                        <div class="service-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4 class="service-title">MARKETING SERVICES</h4>
+                        <p class="service-description">Lorem ipsum dolor sit, amet consectetur adipiscing elit. Illum voluptates error vel cumque eveniet dolores provident maiores explicabo ad atque!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics-section py-5">
+        <div class="stats-overlay"></div>
+        <div class="container position-relative">
+            <div class="row">
+                <!-- Works Completed -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3 class="stat-number">450</h3>
+                        <p class="stat-label">WORKS COMPLETED</p>
+                    </div>
+                </div>
+
+                <!-- Years of Experience -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="stat-number">25</h3>
+                        <p class="stat-label">YEARS OF EXPERIENCE</p>
+                    </div>
+                </div>
+
+                <!-- Total Clients -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="stat-number">550</h3>
+                        <p class="stat-label">TOTAL CLIENTS</p>
+                    </div>
+                </div>
+
+                <!-- Awards Won -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="stat-number">48</h3>
+                        <p class="stat-label">AWARDS WON</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">PORTFOLIO</h2>
+                    <p class="section-subtitle">Lorem ipsum, dolor sit amet consectetur adipiscing elit.</p>
+                    <div class="section-underline mx-auto"></div>
+                </div>
+            </div>
+
+            <!-- Portfolio Items -->
+            <div class="row">
+                <!-- Portfolio Item 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-card card-style">
+                        <div class="portfolio-image-container">
+                            <img src="media/images/PortfolioSection/WebDesign.jpeg" alt="Web Design" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-info-content">
+                                <h4 class="portfolio-title">Web Design</h4>
+                                <p class="portfolio-category">Web Design / 18 Sep, 2018</p>
+                            </div>
+                            <div class="portfolio-button">
+                                <i class="fas fa-plus-circle portfolio-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-card card-style">
+                        <div class="portfolio-image-container">
+                            <img src="media/images/PortfolioSection/WebDesign.jpeg" alt="Web Design" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-info-content">
+                                <h4 class="portfolio-title">Web Design</h4>
+                                <p class="portfolio-category">Web Design / 18 Sep, 2018</p>
+                            </div>
+                            <div class="portfolio-button">
+                                <i class="fas fa-plus-circle portfolio-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-card card-style">
+                        <div class="portfolio-image-container">
+                            <img src="media/images/PortfolioSection/WebDesign.jpeg" alt="Web Design" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-info-content">
+                                <h4 class="portfolio-title">Web Design</h4>
+                                <p class="portfolio-category">Web Design / 18 Sep, 2018</p>
+                            </div>
+                            <div class="portfolio-button">
+                                <i class="fas fa-plus-circle portfolio-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-card card-style">
+                        <div class="portfolio-image-container">
+                            <img src="media/images/PortfolioSection/WebDesign.jpeg" alt="Web Design" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-info-content">
+                                <h4 class="portfolio-title">Web Design</h4>
+                                <p class="portfolio-category">Web Design / 18 Sep, 2018</p>
+                            </div>
+                            <div class="portfolio-button">
+                                <i class="fas fa-plus-circle portfolio-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-card card-style">
+                        <div class="portfolio-image-container">
+                            <img src="media/images/PortfolioSection/WebDesign.jpeg" alt="Web Design" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-info-content">
+                                <h4 class="portfolio-title">Web Design</h4>
+                                <p class="portfolio-category">Web Design / 18 Sep, 2018</p>
+                            </div>
+                            <div class="portfolio-button">
+                                <i class="fas fa-plus-circle portfolio-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-card card-style">
+                        <div class="portfolio-image-container">
+                            <img src="media/images/PortfolioSection/WebDesign.jpeg" alt="Web Design" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-info">
+                            <div class="portfolio-info-content">
+                                <h4 class="portfolio-title">Web Design</h4>
+                                <p class="portfolio-category">Web Design / 18 Sep, 2018</p>
+                            </div>
+                            <div class="portfolio-button">
+                                <i class="fas fa-plus-circle portfolio-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-5">
+        <div class="testimonials-overlay"></div>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <!-- Profile Image -->
+                    <div class="testimonial-image-container mb-4">
+                        <img src="media/images/SecondSection/circulImage.jpeg" alt="Xavi Alonso" class="testimonial-image">
+                    </div>
+                    
+                    <!-- Testimonial Content -->
+                    <div class="testimonial-content">
+                        <h3 class="testimonial-name">Ali El-husseiny</h3>
+                        <p class="testimonial-text">
+                            Computer Science Student with a passion for full-stack development. I specialize in creating dynamic and responsive web applications using ASP.NET and Angular. My goal is to deliver high-quality software solutions that meet client needs and exceed expectations.
+                        </p>
+                        
+                        <!-- Pagination Dots -->
+                        <div class="testimonial-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="row">
+                    <!-- Contact Form -->
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <div class="contact-form-container">
+                            <h3 class="contact-title">Send Message Us</h3>
+                            <div class="contact-underline"></div>
+                            
+                            <form class="contact-form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control contact-input" placeholder="Your Name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control contact-input" placeholder="Your Email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control contact-input" placeholder="Subject" required>
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control contact-textarea" rows="6" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary contact-btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="contact-info-container">
+                            <h3 class="contact-title">Get Touch</h3>
+                            <div class="contact-underline"></div>
+                            
+                            <div class="contact-info-content">
+                                <p class="contact-description">
+                                    Let's Code It
+                                </p>
+                                
+                                <div class="contact-details">
+                                    <div class="contact-item">
+                                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                                        <span class="contact-text">Zagazig , Sharkia , Egypt</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-phone contact-icon"></i>
+                                        <span class="contact-text">+20 1023211727</span>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope contact-icon"></i>
+                                        <span class="contact-text">ali.ahmed.software.engineer@gmail.com</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="social-links">
+                                    <a href="https://www.facebook.com/a1husSEiny" class="social-link">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/" class="social-link">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="social-link">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/3lawy/" class="social-link">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-text">
+                        © Copyright <strong>3lawy</strong>. All Rights Reserved
+                    </p>
+                    <p class="footer-credit">
+                        Designed by <strong>Ali El-husseiny</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="Lib/bootstrap.bundle.min.js"></script>
+       
+</body>
+</html>
