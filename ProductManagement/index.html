@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <section>
+      <div class="container">
+        <div class="cards">
+          <div class="card">
+            <img src="imgs/chef1.jpg" alt="" />
+          </div>
+          <div class="card">
+            <img src="imgs/chef2.jpg" alt="" />
+          </div>
+          <div class="card">
+            <img src="imgs/chef3.jpg" alt="" />
+          </div>
+          <div class="card">
+            <img src="imgs/chef4.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <div class="layer d-none">
+      <div class="img-box">
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-solid fa-square-xmark"></i>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </div> -->
+ 
+    <section>
+      <div class="container">
+        <div class="input-group">
+          <label for="proName">Product Name:-</label>
+          <input
+            type="text"
+            placeholder="Samsung..."
+            name="pName"
+            id="proName"
+          />
+        </div>
+ 
+        <div class="input-group">
+          <label for="proPrice">Product Price:-</label>
+          <input type="number" placeholder="6000" name="pPrice" id="proPrice" />
+        </div>
+ 
+        <div class="input-group">
+          <label for="proCategory">Product Category:-</label>
+          <input
+            type="text"
+            placeholder="Screens..."
+            name="pCategory"
+            id="proCategory"
+          />
+        </div>
+ 
+        <div class="input-group">
+          <label for="proDesc">Product Description:-</label>
+          <input type="text" placeholder="des....." name="pDesc" id="proDesc" />
+        </div>
+ 
+        <button class="btn" id="btn">Add Product</button>
+      </div>
+    </section>
+ 
+    <section>
+      <div class="container">
+        <input
+          type="text"
+          name="searchPro"
+          placeholder="Search...."
+          id="proSearch"
+        />
+        <div class="table-responsive">
+          <table>
+            <thead>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Delete</th>
+            </thead>
+            <tbody id="tbody">
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+ 
+    <script src="test.js"></script>
+      <!-- Update Product Modal -->
+      <div id="updateModal" class="modal" style="display:none;">
+        <div class="modal-content">
+          <h2>Update Product</h2>
+          <div class="input-group">
+            <label for="updateName">Product Name:-</label>
+            <input type="text" id="updateName" />
+          </div>
+          <div class="input-group">
+            <label for="updatePrice">Product Price:-</label>
+            <input type="number" id="updatePrice" />
+          </div>
+          <div class="input-group">
+            <label for="updateCategory">Product Category:-</label>
+            <input type="text" id="updateCategory" />
+          </div>
+          <div class="input-group">
+            <label for="updateDesc">Product Description:-</label>
+            <input type="text" id="updateDesc" />
+          </div>
+          <button class="btn" id="saveUpdate">Save</button>
+          <button class="btn delete" id="cancelUpdate">Cancel</button>
+        </div>
+      </div>
+  </body>
+</html>

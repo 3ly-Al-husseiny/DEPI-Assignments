@@ -1,0 +1,219 @@
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 10px;
+  min-width: 320px;
+  max-width: 90vw;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+.modal-content .input-group {
+  margin-bottom: 15px;
+}
+.modal-content label {
+  display: block;
+  margin-bottom: 5px;
+  color: #222;
+}
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.modal-content .btn {
+  margin-right: 10px;
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+body {
+  background-color: rgba(2, 2, 118, 0.801);
+}
+ 
+section {
+  padding: 50px 0;
+}
+ 
+.cards {
+  display: flex;
+}
+ 
+.cards .card {
+  padding: 0 10px;
+}
+ 
+.cards .card img {
+  width: 100%;
+}
+ 
+.layer {
+  position: fixed;
+  inset: 0;
+  background: #ff00008a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-box {
+  width: 800px;
+  height: 400px;
+  background-image: url("../imgs/chef1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+i {
+  font-size: 24px;
+  cursor: pointer;
+}
+i.fa-square-xmark {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+ 
+.d-none {
+  display: none;
+}
+ 
+.d-flex {
+  display: flex;
+} */
+ 
+ 
+ 
+ 
+:root{
+  --mainColor:#554edd ;
+  --btnColor: #e37373;
+  --btnColor2: #e3c373;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+ 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+  background-color: #dae3ee; /* or add it to the track */
+}
+::-webkit-scrollbar-thumb {
+  background: #554edd;
+  border-radius: 10px;
+}
+body{
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dae3ee, #729ceb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #141E30;  /* fallback for old browsers */
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px auto;
+}
+ 
+section{
+  padding: 50px 20px;
+  margin: 20px;
+  background-color: #729ceb7c;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+label{
+  display: block;
+  color: #fff;
+}
+.input-group{
+  padding: 10px;
+}
+ 
+input{
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  margin-top: 15px;
+}
+input:focus{
+  box-shadow: 0 0 0 .25rem rgba(93, 243, 231, 0.25);
+}
+.btn{
+  display: block;
+  padding: 8px  15px;
+  outline: 0;
+  border: 0;
+  background-color: #554edd;
+  color: #fff;
+  margin: 10px auto;
+  transition: background-color .5s;
+}
+.btn:hover{
+  background-color: #554eddb8;
+  cursor: pointer;
+}
+.table-responsive{
+  width: 80%;
+  margin: 20px auto;
+  overflow: auto;
+}
+table{
+  width: 100%;
+  min-width: 800px;
+}
+thead th{
+  color: white;
+}
+tbody tr td{
+  text-align: center;
+  color: white;
+}
+tbody tr td:last-child{
+  display: flex;
+}
+ 
+ 
+.btn.delete{
+  background-color: #e37373;
+}
+.btn.delete:hover{
+  background-color: #e37373af;
+}
+ 
+.btn.update{
+  background-color: #e3c373;
+}
+.btn.update:hover{
+  background-color: #e3c37390;
+}
